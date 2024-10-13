@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="sobre.html">
+    <link rel="stylesheet" href="contato.html">
+    <title>Poetas Anonimos</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+
+        header {
+            background-color: #222;
+            color: #ffa500;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ffa500;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ffa500;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .note {
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .note h2 {
+            color: #ffa500;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            background-color: #222;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: #fff;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Poetas Anonimos</a></h1>
+    </header>
+    <nav>
+        <a href="poemas.html">Poemas</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <section>
+        <div class="note" data-content="eu sou poeta e nunca encontrei alguém que entendesse o “meu amar”
+        cada palavra, um suspiro, cada verso, uma prece, mas quem compreenderá a dor que enche meu peito?
+        meus versos são como janelas para a alma,
+        mas quem se aventurará a olhar através delas? 
+        se não consegue enfrentar seus próprios demônios se assustaria com os meus.
+        em cada estrofe, desvendo meu ser,
+        expondo as cicatrizes que ninguém quer ver.
+        mas quem, neste mundo de sombras e véus,
+        ousará mergulhar nos meus abismos, nos meus céus?
+        meus versos são um espelho, refletem a escuridão,
+        a luta interna, a busca pela redenção.
+        e se não pode encarar suas próprias batalhas,
+        certamente fugirá ao ver minhas muralhas.
+        no eco das palavras, ecoa minha verdade,
+        uma canção de amor, uma dança de saudade.
+        mas quem, além de mim, ousará compreender,
+        o fogo que arde em meu peito, o mar que faz tremer?
+        então, aqui estou, poeta solitário,
+        erguendo minhas palavras como um brado libertário.
+        se não podes enfrentar os fantasmas que te assombram,
+        não ouses adentrar os corredores que me dão calma.">
+            <h2>Eu sou poeta ?</h2>
+            <p>eu sou poeta e nunca encontrei alguém...</p>
+        </div>
+        <div class="note"data-content="as pessoas não têm que dançar conforme a música que a gente toca, né?  
+        mas, aos poucos, percebi a realidade: você se foi.  
+        e, devagar, o vazio foi tomando conta de mim.  
+        nunca te culpei, só queria entender: por que você sumiu?  
+        sem você, os dias parecem mais longos e vazios,  
+        e cada lembrança tua ainda me deixa perdido.  
+        eu te busquei em todos os lugares, em todos os rostos,  
+        mas ninguém é como você, e isso me assombra.
+        ainda escuto tua risada ecoando nos meus pensamentos,  
+        e sinto falta do jeito que me fazia sentir.  
+        por mais que eu tente seguir em frente, algo sempre me puxa para trás,  
+        como se parte de mim ainda estivesse esperando por você.
+        eu sei que as pessoas mudam, que caminhos se separam,  
+        mas às vezes só queria saber se você também sente a minha falta.  
+        o que será que houve? onde foi que erramos?  
+        talvez nunca saiba a resposta, mas precisava perguntar.">
+            <h2>Você se foi</h2>
+            <p>as pessoas não têm que dançar conforme a musica...</p>
+        </div>
+        <div class="note"data-content="eu gosto do ponto fora da curva,  
+        do riso exagerado,  
+        da palavra falada sem pensar,  
+        mas não de uma forma que machuque quem a escute,  
+        mas sim de uma forma que expressa quem você é  
+        sem se esconder atrás de uma personalidade  
+        que você criou para agradar as pessoas.  
+        eu gosto de ouvir,  
+        muito mais do que falar,  
+        presto atenção em cada mínimo detalhe  
+        enquanto viajo pelas curvas da sua boca,  
+        e me imagino voando,  
+        viajando em um mundo nosso,  
+        onde estamos só eu e você.  
+        e quando isso acontece  
+        finalmente o silêncio ensurdecedor na minha cabeça  
+        se transforma em música,  
+        e os rabiscos que mais se pareciam com monstros  
+        viram paisagem,  
+        e eu torço pra isso durar pra sempre.  
+        mas o silêncio volta no último beijo  
+        e escurece novamente no seu “tchau”.">
+            <h2>O ponto fora da curva</h2>
+            <p>eu gosto do ponto fora da curva...</p>
+        </div>
+
+        </div>
+        <div class="note" data-content="viver a guerra ou almejar a paz?
+    sinceramente, cansei da dualidade de ser bom ou ruim,
+    eu só quero ser eu e foda-se o resto,
+    enfim, cansei de tentar me encaixar em lugares que nunca foram pra mim,
+    tentar me encaixar nesse seu mundinho?
+    logo eu, um universo,
+    me sentir reprimido e tentado a deixar de ser eu,
+    e olha que ironia eu precisei te perder pra não me perder,
+    e não vou mentir que ainda to tentando me encontrar,
+    drogas, bebidas e mulheres,
+    preenchem um vazio que nunca foram delas,
+    e por mais que eu tente tô tentando encontrar sentido,
+    mas eu também sou um anjo,
+    eu tenho o nome de anjo mas sou tão sem fé,
+    entende a ironia?">
+            <h2>Viver a guerra ou almejar a paz?</h2>
+            <p>viver a guerra ou almejar a paz?...</p>
+        </div>
+
+        <div class="note" data-content="na escuridão da noite, os monstros retornam, não é mesmo?
+        eles vêm para nos lembrar que a cura ainda não chegou,
+        que o vazio em nossos peitos é tão familiar quanto eles.
+        sim, é como se fizessem questão de nos visitar,
+        como se precisassem nos lembrar de nossa fragilidade,
+        de que estamos presos em um ciclo interminável de tormento.
+        e enquanto eles dançam ao nosso redor,
+        nossos corações ecoam o som do vazio que nos consome,
+        um eco sombrio que nos lembra de nossa solidão. 
+        cada som, cada sombra, um lembrete de nossos medos,
+        de nossas dúvidas, de nossos demônios interiores,
+        que nos arrastam para as profundezas da desesperança.
+        e assim, entre os monstros e o vazio que nos consome,
+        seguimos este diálogo sombrio, esta dança sinistra,
+        na certeza de que a escuridão é tudo o que nos espera,
+        um abismo sem fim, onde nossos gritos se perdem no vácuo.">
+                <h2>Monstros</h2>
+                <p>na escuridão da noite, os monstros retornam...</p>
+            </div>
+    
+
+    </section>
+    <footer>
+        &copy; 2024 Notas. Todos os direitos reservados.
+    </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalContent"></p>
+        </div>
+    </div>
+
+    <script>
+        // Função para abrir o modal
+        function openModal(title, content) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalContent').innerText = content;
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        // Fecha o modal se clicar fora dele
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+
+        // Adiciona o evento de clique em todas as notas
+        document.querySelectorAll('.note').forEach(note => {
+            note.addEventListener('click', () => {
+                const title = note.getAttribute('data-title');
+                const content = note.getAttribute('data-content');
+                openModal(title, content);
+            });
+        });
+    </script>
+</body>
+
+</html>
